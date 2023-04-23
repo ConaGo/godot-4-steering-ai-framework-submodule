@@ -4,8 +4,9 @@ class_name GSAIFlee
 extends GSAISeek
 
 
-func _init(agent: GSAISteeringAgent, target: GSAIAgentLocation).(agent, target) -> void:
-	pass
+func _init(_agent: GSAISteeringAgent, _target: GSAIAgentLocation) -> void:
+	agent = _agent
+	target = _target
 
 
 func _calculate_steering(acceleration: GSAITargetAcceleration) -> void:

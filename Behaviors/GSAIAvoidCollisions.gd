@@ -12,7 +12,9 @@ var _first_relative_position: Vector3
 var _first_relative_velocity: Vector3
 
 
-func _init(agent: GSAISteeringAgent, proximity: GSAIProximity).(agent, proximity) -> void:
+func _init(_agent: GSAISteeringAgent, _proximity: GSAIProximity) -> void:
+	agent = _agent
+	proximity = _proximity
 	pass
 
 

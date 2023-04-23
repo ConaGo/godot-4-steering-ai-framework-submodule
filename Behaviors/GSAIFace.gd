@@ -5,10 +5,10 @@ class_name GSAIFace
 extends GSAIMatchOrientation
 
 
-func _init(agent: GSAISteeringAgent, target: GSAIAgentLocation, use_z := false).(
-	agent, target, use_z
-) -> void:
-	pass
+func _init(_agent: GSAISteeringAgent, _target: GSAIAgentLocation, _use_z := false) -> void:
+	agent = _agent
+	target = _target
+	use_z = _use_z
 
 
 func _face(acceleration: GSAITargetAcceleration, target_position: Vector3) -> void:
